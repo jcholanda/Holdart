@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylex.css">
+    <link rel="icon" href="Calebamesbury-Classic-American-Cars-Muscle-Car-Mustang-GT.128.png">
+    <title>holdart</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0; 
+        box-sizing: border-box; 
+      }
+
+    body{
+        background-image: url(carro.azul.jpg.png);
+    } 
+        section {
+            background-color: blueviolet;
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 20px; 
+        }
+
+        @media(max-width: 1200px) {
+            section {
+                max-width: 1000px;
+                background-color: yellow;
+            }
+        }
+
+        @media(max-width: 1024px) {
+            section {
+                max-width: 700px;
+                background-color: blue;
+            }
+        }
+
+        @media(max-width: 768px) {
+            section {
+                max-width: 400px;
+                background-color: rgb(183, 42, 59);
+            }
+        }
+
+        
+        @media(max-width: 425px) {
+            section {
+                max-width: 320px;
+                background-color: rgb(163, 163, 255);
+            }
+        }
+
+        header {
+
+            background-color: #dfd5d50f;
+            color: #fff;
+            padding: 10px 0;
+        }
+        #menu-open, #menu-close{
+        border: none;
+        background: none;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 0px 5px 0px 5px;
+        cursor: pointer;
+        display: flex;
+}
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+ 
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+@media (max-width: 700px){
+    #menu-open{
+        display: block;
+    }
+    #menu-open{
+        margin-left: auto;
+    }
+
+    #menu-close{
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 700px){
+    #menu {
+        display: none;
+    }
+}
+
+ 
+        .nav-list ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .nav-item {
+            margin-right: 20px;
+        }
+
+        .nav-item:last-child {
+            margin-right: 0;
+        }
+
+ 
+        .login-button button {
+            background-color: transparent;
+            border: 1px solid #481717;
+            color: #c71e1e;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+         .mobile-menu-icon button {        
+        cursor: pointer;
+        display: none;
+}
+
+        footer {
+            background-color: #7d0808b7;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body >
+    <header>
+        
+        <nav class="nav-bar">
+            <div class="logo">
+            <span>Holdart</span>
+
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="catalogo.html" class="nav-link">Veículos</a></li>
+                    <li class="nav-item"><a href="catalogo.html" class="nav-link">Comprar</a></li>
+                </ul>
+            </div>
+
+            <div class="login-button">
+            <button><a href="formulario.html" >Entrar</a></button>
+            </div>
+           
+            <div class="mobile-menu-icon">
+            <button id="menu-open" onclick="menuShow()" >&#9776;</button> 
+            <button id="menu-close" onclick="menuShow()"></button>
+            </div>
+            
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="catalogo.html" class="nav-link">Veículos</a></li>
+                <li class="nav-item"><a href="catalogo.html" class="nav-link">Comprar</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="formulario.html">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+
+    <script src="recaps.js"></script>
+
+    <footer>
+        <p>&COPY;Holdart</p>
+    </footer>
+</body>
+</html>
