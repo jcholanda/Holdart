@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylex.css">
     <link rel="icon" href="logo holdart (2).png">
-    <title>holdart</title>
+    <title>HOLDART</title>
     <style>
       * {
-        margin: 0;
+        margin: 2px;
         padding: 0; 
         box-sizing: border-box; 
       }
 
     .banner {
     width: 100%;
-    height: calc(100vh - 8vh);
+    height: calc(100vh - 15vh);
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 8vh;
+    
     }
      .banner video {
     position: auto;
@@ -30,15 +30,9 @@
     object-fit: cover;
     width: 100%;
   }
- 
-        @media(max-width: 1200px) {
-            section {
-                max-width: 1000px;
-                background-color: yellow;
-            }
-        }
 
-        @media(max-width: 1024px) {
+
+        @media(max-width: 1200px) {
             section {
                 max-width: 700px;
                 background-color: blue;
@@ -48,22 +42,17 @@
         @media(max-width: 768px) {
             section {
                 max-width: 400px;
-                background-color: rgb(183, 42, 59);
+                background-color: rgb(191, 0, 22);
             }
         }
 
         
-        @media(max-width: 425px) {
-            section {
-                max-width: 320px;
-                background-color: rgb(163, 163, 255);
-            }
-        }
+
 
         header {
 
             background-color: #dfd5d50f;
-            color: #fff;
+            color:antiquewhite;
             padding: 10px 0;
             position:fixed;
             width: 100%;
@@ -90,7 +79,7 @@
 
 @media (max-width: 700px){
     #menu-open{
-        display: block;
+        display: flex;
     }
     #menu-open{
         margin-left: auto;
@@ -135,36 +124,30 @@
         display: none;
 }
 
-        footer {
-            background-color: #7d0808b7;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-        }
+
     </style>
 </head>
 
 <body >
     <header>
-        
+<!--figura1-->
         <nav class="nav-bar">
             <div class="logo image">
                 <span><img src="logo.png" alt=""></span>
             </div>
+    <!--aqui utilizamos a tag ul para criar uma lista de navegação que ficará na parte superior do site;
+    cada item dessa lista leva a uma diferente página de navegação com mais conteúdos do nosso site-->  
 
             <div class="nav-list">
+                <!--lista não ordenada-->
                 <ul>
                     <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
                     <li class="nav-item"><a href="catalogo.html" class="nav-link">Veículos</a></li>
                     <li class="nav-item"><a href="pagamento.html" class="nav-link">Comprar</a></li>
                 </ul>
             </div>
-
+            <!--Esse botão serve para vc acessar o formulário de cadastro-->
             <div class="login-button">
             <button><a href="formulario.html" >Entrar</a></button>
             </div>
@@ -175,11 +158,12 @@
             </div>
             
         </nav>
-
+        <!--essa div faz as especificações da barra de navegação em aparelho móvel-->
         <div class="mobile-menu">
+            <!--lista não ordenada-->
             <ul>
                 <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="sobre.html">Sobre</a></li>
                 <li class="nav-item"><a href="catalogo.html" class="nav-link">Veículos</a></li>
                 <li class="nav-item"><a href="pagamento.html" class="nav-link">Comprar</a></li>
             </ul>
@@ -189,17 +173,43 @@
             </div>
         </div>
       </header>
+      <!--figura 2-->
          <div class="banner">
             <video autoplay muted loop>
                 <source src="hp-hero-ex30-video-desktop-21x9-reveal.mp4 " type="video/mp4">
             </video>
         </div>
-
-
-    <script src="recaps.js"></script>
-
-    <footer>
+        <main class="sobre">
+            <h1>LUXO SOB 4 RODAS</h1>
+        </main> 
+        <br>
+        <br>
+        <br>
+ <footer class="content">
+    <div class="footer_list">
+    <!--lista ordenada-->
+        <ol>
+            <li><h2>Montadoras</h2></li>
+            <br>
+            <li>Mercedes-Benz</li>
+            <li>Volvo</li>
+            <li>Porshe</li>
+            <li>BMW</li>
+        </ol>
+        <ol>
+            <li><h3>Fale conosco</h3></li>
+            <br>
+            <li> Telefone: (13) 3567-9984</li>
+            <li> Email: holdart.luxurycars@gmail.com</li>
+            <li>Visite-nos: Rua do Comércio- n.°44, Centro-Santos</li>
+        </ol> 
+    </div>
+    <div class="rodape"> 
         <p>&COPY;Holdart</p>
-    </footer>
+    </div>
+ </footer>
+
+
+ <script src="recaps.js"></script>
 </body>
 </html>
