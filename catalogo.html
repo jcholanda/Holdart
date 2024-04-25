@@ -7,15 +7,112 @@
     <title>Veículos</title>
 </head>
 <body>
-    <header> <div class="menu">
+    <header class="menu">
         <div class="logo">
-        <span>Holdart</span>
+            <div>
+                <span><img src="logo.png" class="logo img"></span>
+            </div>
+            <div>
+                <button type="submit" class="button"><a href="index.html">Home</a></button>
+            </div>
         </div>
-        <div>
-            <button type="submit"class="button"> <a href="index.html">Home</a> </button>  <!--modifiquei-->
-        </div>
-    </div>
     </header>
+    <main class="table" id="customers_table">
+        <section class="table_header">
+            <h1>Carros</h1>
+            <div class="input-group">
+                <input type="search" placeholder="Pesquise...">
+            </div>
+            <div class="export__file">
+                <label for="export-file" class="export__file-btn" title="Export File"></label>
+                <input type="checkbox" id="export-file">
+                <div class="export__file-options">
+                    <label>Export As &nbsp; &#10140;</label>
+                    <label for="export-file" id="toPDF"> <img src="pdf.png" alt="" class="format-img"></label>
+                    <label for="export-file" id="toJSON"><img src="json.png" alt="" class="format-img"></label>
+                    <label for="export-file" id="toCSV"> <img src="csv.png" alt="" class="format-img"></label>
+                    <label for="export-file" id="toEXCEL"> <img src="excel.png" alt="" class="format-img"></label>
+                </div>
+        </section>
+        <section class="table_body">
+            <table>
+                <thead>
+                    <tr>
+                        <th> Montadora <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Modelo <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Ano <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Câmbio <span class="icon-arrow">&UpArrow;</span></th>
+                        <th> Valor <span class="icon-arrow">&UpArrow;</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> MERCEDES-BENZ </td>
+                        <td>GLC 86 AMG </td>
+                        <td>2018/2019</td>
+                        <td>
+                            <p class="cambio">3.0 V6 COUPE 4MATIC</p>
+                        </td>
+                        <td><strong>$399.890,00</strong></td>
+                    </tr>
+                    <td> LAND HOVER</td>
+                    <td>DISCOVERY SPORT </td>
+                    <td> 2020/2020 </td>
+                    <td>
+                        <p class="cambio"> 2.0 P250 Turbo R-dynamic SE</p>
+                    </td>
+                    <td><strong>$249.890,00</strong></td>
+                </tr>
+                <tr>
+                    <td> PORSHE</td>
+                    <td>PANAMERA</td>
+                    <td>2020/2020</td>
+                    <td>
+                        <p class="cambio"> 2.9 V6 E-hybrid 4</p>
+                    </td>
+                    <td><strong>$699.890,00</strong></td>
+                </tr>
+                <tr>
+                    <td> BMW </td>
+                    <td>X4</td>
+                    <td>2019/2020</td>
+                    <td>
+                        <p class="cambio"> 3.0 Twinpower M Competition</p>
+                    </td>
+                    <td><strong>$520,890,00</strong></td>
+                </tr>
+                <tr>
+                    <td> VOLVO </td>
+                    <td>XC40 </td>
+                    <td>2022/2022</td>
+                    <td>
+                        <p class="cambio">P8 Recharge Electric BEV Pure AWD</p>
+                    </td>
+                    <td><strong>$240,890,00</strong></td>
+                </tr>
+                <tr>
+                    <td> PORSHE </td>
+                    <td> CAYENNE</td>
+                    <td>2018/2019</td>
+                    <td>
+                        <p class="cambio">3.0 V6 AWD</p>
+                    </td>
+                    <td><strong>$440,890,00</strong></td>
+                </tr>
+                <tr>
+                    <td> AUDI</td>
+                    <td>Q3</td>
+                    <td>2021/2021</td>
+                    <td>
+                        <p class="cambio">1.4 35 TFSI Black S Tronic</p>
+                    </td>
+                    <td><strong>$270,890,00</strong></td>
+                </tr>
+            </tbody>
+         </table>
+    </main>
+<br>
+<br>
     <h2 class="vitrine">Veículos</h2>
     <ul class="product-list">
 <li class="product-item">
@@ -28,30 +125,11 @@
     <h2 class="title">GLC 83 AMG</h2>
     <p class="description">3.0 V6 Coupé 4matic 2018 / 2019
     </p>
-    <ul class="star-ranking">
-        <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-        </li>
-        <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-        </li>
-        <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-        </li>
-        <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-        </li>
-        <li><img src="https://i.ibb.co/TwYYb93/star-1.png">
-        </li>
-        <li class="qtd-votes">
-            </span>(300)</span>
-        </li>
-    </ul>
+
 </figcaption>
 <div class="price-box">
     <div class="price">
-        <div>
-            <del>R$450.980,00</del>
-            <ins class="d-block"> R$399.890,00</ins>
-        </div>
-        <span class="price-info">6x de R$66.648,33</span>
-    </div>
+
     <button href="glc.html" class="btn btn-buy">Comprar agora<i class="fas fa-arrow-right"></i></button>
 </div>
 </div>
@@ -68,30 +146,11 @@
     <figcaption class="product-info-description">
         <h2 class="title">DISCOVERY SPORT</h2>
         <p class="description">2.0 P250 Turbo R-dynamic SE 2020 / 2020</p>
-        <ul class="star-ranking">
-            <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-            </li>
-            <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-            </li>
-            <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-            </li>
-            <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-            </li>
-            <li><img src="https://i.ibb.co/TwYYb93/star-1.png">
-            </li>
-            <li class="qtd-votes">
-                </span>(500)</span>
-            </li>
-        </ul>
+
     </figcaption>
     <div class="price-box">
         <div class="price">
-            <div>
-                <del>R$350.980,00</del>
-                <ins class="d-block"> R$249.890,00</ins>
-            </div>
-            <span class="price-info">6x de R$41.648,33</span>
-        </div>
+
         <a href="discovery.html" target="_blank"><button href="#" class="btn btn-buy">Comprar agora<i class="fas fa-arrow-right"></i></button></a>
     </div>
     </div>
@@ -109,32 +168,11 @@
         <figcaption class="product-info-description">
             <h2 class="title">PANAMERA</h2>
             <p class="description">2.9 V6 E-hybrid 4 2020 / 2020</p>
-            <ul class="star-ranking">
-                <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-                </li>
-                <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-                </li>
-                <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-                </li>
-                <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-                </li>
-                <li><img src="https://i.ibb.co/TwYYb93/star-1.png">
-                </li>
-                <li><img src="https://i.ibb.co/TwYYb93/star-1.png">
-                </li>
-                <li class="qtd-votes">
-                    </span>(100)</span>
-                </li>
-            </ul>
+
         </figcaption>
         <div class="price-box">
             <div class="price">
-                <div>
-                    <del>R$750.980,00</del>
-                    <ins class="d-block"> R$699.890,00</ins>
-                </div>
-                <span class="price-info">6x de R$166.648,33</span>
-            </div>
+
             <a href="panamera.html" target="_blank"><button href="#" class="btn btn-buy">Comprar agora<i class="fas fa-arrow-right"></i></button></a>
         </div>
         </div>
@@ -153,30 +191,11 @@
                 <h2 class="title">X4</h2>
                 <p class="description">3.0 Twinpower M Competition 2019 / 2020
                 </p>
-                <ul class="star-ranking">
-                    <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-                    </li>
-                    <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-                    </li>
-                    <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-                    </li>
-                    <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-                    </li>
-                    <li><img src="https://i.ibb.co/TwYYb93/star-1.png">
-                    </li>
-                    <li class="qtd-votes">
-                        </span>(350)</span>
-                    </li>
-                </ul>
+
             </figcaption>
             <div class="price-box">
                 <div class="price">
-                    <div>
-                        <del>R$550.980,00</del>
-                        <ins class="d-block"> R$520.890,00</ins>
-                    </div>
-                    <span class="price-info">6x de R$86.815,00</span>
-                </div>
+
                 <a href="x4.html" target="_blank"><button href="#" class="btn btn-buy">Comprar agora<i class="fas fa-arrow-right"></i></button></a>
             </div>
             </div>
@@ -196,30 +215,11 @@
                     <p class="description">P8 Recharge Electric BEV Pure AWD
                         2022 / 2022
                     </p>
-                    <ul class="star-ranking">
-                        <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-                        </li>
-                        <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-                        </li>
-                        <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-                        </li>
-                        <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-                        </li>
-                        <li><img src="https://i.ibb.co/TwYYb93/star-1.png">
-                        </li>
-                        <li class="qtd-votes">
-                            </span>(350)</span>
-                        </li>
-                    </ul>
+
                 </figcaption>
                 <div class="price-box">
                     <div class="price">
-                        <div>
-                            <del>R$410.980,00</del>
-                            <ins class="d-block"> R$240.890,00</ins>
-                        </div>
-                        <span class="price-info">6x de R$40.148,33</span>
-                    </div>
+
                     <a href="xc40.html" target="_blank"><button href="#" class="btn btn-buy">Comprar agora<i class="fas fa-arrow-right"></i></button></a>
                 </div>
                 </div>
@@ -239,30 +239,10 @@
                     <p class="description">3.0 V6 AWD S
                         2018 / 2019
                     </p>
-                    <ul class="star-ranking">
-                        <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-                        </li>
-                        <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-                        </li>
-                        <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-                        </li>
-                        <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-                        </li>
-                        <li><img src="https://i.ibb.co/TwYYb93/star-1.png">
-                        </li>
-                        <li class="qtd-votes">
-                            </span>(350)</span>
-                        </li>
-                    </ul>
+
                 </figcaption>
                 <div class="price-box">
-                    <div class="price">
-                        <div>
-                            <del>R$500.980,00</del>
-                            <ins class="d-block"> R$440.890,00</ins>
-                        </div>
-                        <span class="price-info">6x de R$73.481,66</span>
-                    </div>
+
                     <a href="cayenne.html" target="_blank"><button href="#" class="btn btn-buy">Comprar agora<i class="fas fa-arrow-right"></i></button></a>
                 </div>
                 </div>
@@ -282,29 +262,11 @@
                     <p class="description">1.4 35 TFSI Black S Tronic
                         2021 / 2021
                     </p>
-                    <ul class="star-ranking">
-                        <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-                        </li>
-                        <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-                        </li>
-                        <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-                        </li>
-                        <li><img src="https://i.ibb.co/2kW5mnM/star.png">
-                        </li>
-                        <li><img src="https://i.ibb.co/TwYYb93/star-1.png">
-                        </li>
-                        <li class="qtd-votes">
-                            </span>(350)</span>
-                        </li>
-                    </ul>
+
                 </figcaption>
                 <div class="price-box">
                     <div class="price">
-                        <div>
-                            <del>R$300.980,00</del>
-                            <ins class="d-block"> R$270.890,00</ins>
-                        </div>
-                        <span class="price-info">6x de R$45.148,33</span>
+
                     </div>
                     <a href="q3.html" target="_blank"><button href="#" class="btn btn-buy">Comprar agora<i class="fas fa-arrow-right"></i></button></a>
                 </div>
@@ -313,5 +275,6 @@
                 </a>
                 </li>
             </ul>
+        <script src="scriptT.js"></script>     
 </body>
 </html>
