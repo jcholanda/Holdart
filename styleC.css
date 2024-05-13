@@ -1,7 +1,7 @@
 * {
 
   box-sizing: border-box;
-  background-color:  #c4c7c9;;
+  background-color: cornsilk;
 }
 
 .menu {
@@ -9,27 +9,21 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 5%;
-  height: 110px;
-}
-.logo{
-  display: flex;
-  align-items: center;
+  height: 40px;
 }
 
-.logo img{
-  justify-content: space-between;
-  height: 100px;
-  width: auto;
-  top: 20px;
-  border-bottom:  solid border;
-}
-.button{
-  margin-left: auto;
+.logo {
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-style: italic;
+  color: rgb(237, 33, 18);
+  font-weight: bolder;
 }
 
 .button a {
   text-decoration: none;
-  color: #635c5c;
+  color: #9a0f0f;
   font-weight: 500;
   font-size: 1.1rem;
 }
@@ -37,7 +31,7 @@
 .vitrine {
   font-size: x-large;
   font-family: 'Times New Roman', Times, serif;
-  color: #000000;
+  color: #9a0f0f;
   display: block;
   margin: 50px auto;
   max-width: 1100px;
@@ -46,7 +40,6 @@
 }
 
 body {
-
   max-width: 1300px;
   font-family: sans-serif;
   font-size: 13px;
@@ -57,14 +50,14 @@ body {
 ul {
   padding: 0;
   margin: 0;
-  list-style: none;
+  list-style: none; /* Remove os marcadores de lista */
 
 }
 
 .product-list {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; 
+  flex-wrap: wrap; /* Permite a quebra dos itens */
   margin: auto;
   max-width: 1100px;
   width: auto;
@@ -75,7 +68,8 @@ ul {
   cursor: pointer;
   margin: 0 auto;
   transition: .2s;
-  box-sizing: border-box; }
+  box-sizing: border-box; /* Inclui a borda no cálculo do tamanho */
+}
 
 .product-item:hover {
   transform: translateY(-3px);
@@ -96,7 +90,7 @@ ul {
 }
 
 .tag-procent {
-  background: rgb(57, 53, 53);
+  background: #f00;
   color: #ffffff;
   font-size: 12px;
   font-weight: bold;
@@ -185,10 +179,10 @@ ul {
 
 .btn-buy {
   font-size: 12px;
-  background: rgb(59, 53, 53);
+  background: red;
   border: 0;
   border-radius: 5px;
-  color: #e3e7ed;
+  color: #000000;
   cursor: pointer;
   padding:10px;
   text-decoration: none;
@@ -200,7 +194,7 @@ ul {
 }
 
 .btn-buy:hover {
-  background: #3b3737;
+  background: #b43327;
 }
 
 .d-block {

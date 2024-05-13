@@ -2,26 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(194, 188, 179);
-}
-.button {
-    float: right;
-    margin-right: 10px;
-    text-decoration: none;
-    color: #9a0f0f;
-    font-weight: 1000;
-    font-size: 1.2rem;
-}
-h1 {
-    text-align: center;
-}
-
-h2 {
-    text-align: justify;
-}
-
-h4 {
-    text-align: left;
+    background-color: rgb(146, 130, 130);
 }
 
 .container-slider {
